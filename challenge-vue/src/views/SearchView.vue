@@ -63,7 +63,7 @@ export default {
     search() { // lancer la recherche
       fetch("https://api.spotify.com/v1/search?q="+ this.name +"&type=album&limit=20", {
         method:'GET', 
-        headers: {'Authorization': 'Bearer BQCFrRwpbU6DLxerqVAv43SV8XdJ_8mjsKQu0O_hBPTiYFcYYBiyP00dyw7F2YFijjg2g3HTFI7eP-8b6qiMNd__8W3aJWZ8YbDzJ867dsbqF1GEtkl58B5ib371--Vl8c7KnIoh1bku'}
+        headers: {'Authorization': 'Bearer BQCy1BTEq9UeBhJ5EtskQoq0MTPkm0tgOpGrBjrucM12TJ9kOJTsHIyczCxJiV8W6JHTC0OFQOfzOCxLhPOs15gYB_SP60uUQ1fkBx2ixjp-FGdhLNRvoqJlqaCZg06U7M0ivIfnZJYq'}
       })
       .then(response => response.json())
       .then(data => {
